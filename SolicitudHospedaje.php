@@ -1,4 +1,4 @@
- 
+
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
@@ -31,20 +31,20 @@
 
    </div>
      <div id="logreg-forms">
-       <form class="form-signin" style="background: rgb(255, 255, 255);" method="post">
+       <form class="form-signin" style="background: rgb(255, 255, 255);" method="POST" action="registro/sh.php">
          <div class=" mb-4 font-weight-normal" >
   <fieldset>
     <legend class="text-center header"><h4>Reporte de Hospedaje</h4></legend>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="empresa" class="control-label">DN</label>
-            <input id="empreai" name="name" type="text" placeholder="DN" class="form-control">
+            <label for="dn" class="control-label">DN</label>
+            <input id="dn" name="dn" type="text" placeholder="DN" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-          <label for="tipo" class="control-label">Tipo de Hospedaje</label>
-       <select class="form-control" id="tipo">
+          <label for="hospedaje" class="control-label">Tipo de Hospedaje</label>
+       <select class="form-control" id="hospedaje" name="hospedaje">
            <option value="AL">Hotel</option>
 
            <option value="AL">AIRBNB</option>
@@ -55,45 +55,45 @@
     <div class="form-group">
        <div class="col-md-12">
             <label for="empresa" class="control-label">Nombre de la Empresa</label>
-            <input id="empreai" name="name" type="text" placeholder="Nombre del Hotel, Hostal, AIRBNB, etc." class="form-control">
+            <input id="empresa" name="empresa" type="text" placeholder="Nombre del Hotel, Hostal, AIRBNB, etc." class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="empresa" class="control-label">Ubicación de LLegada</label>
-            <input id="empreai" name="name" type="text" placeholder="Av.Santa Mónica33, Col. El Mirador, C.P. 54080." class="form-control">
+            <label for="ubicacionllegada" class="control-label">Ubicación de LLegada</label>
+            <input id="ubicacionllegada" name="ubicacionllegada" type="text" placeholder="Av.Santa Mónica33, Col. El Mirador, C.P. 54080." class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="presupuesto" class="control-label">Presupuesto</label>
-            <input id="presupuestoi" name="name" type="number" placeholder="
-            Pesos mexicanos" class="form-control">
+            <input id="presupuesto" name="presupuesto" type="number" placeholder="
+            MXN" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="dater" class="control-label">Día de LLegada</label>
-            <input id="dateri" name="name" type="date" placeholder="" class="form-control">
+            <label for="diallegada" class="control-label">Día de LLegada</label>
+            <input id="diallegada" name="diallegada" type="date" placeholder="" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="timer" class="control-label">Hora de LLegada</label>
-            <input id="timeri" name="name" type="time" placeholder="" class="form-control">
+            <label for="horallegada" class="control-label">Hora de LLegada</label>
+            <input id="horallegada" name="horallegada" type="time" placeholder="" class="form-control">
         </div>
     </div>
 
     <div class="form-group">
        <div class="col-md-12">
-            <label for="datei" class="control-label">Día de Salida</label>
-            <input id="dateii" name="name" type="date" placeholder="" class="form-control">
+            <label for="diallegada" class="control-label">Día de Salida</label>
+            <input id="diasalida" name="diasalida" type="date" placeholder="" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="time" class="control-label">Hora de salida</label>
-            <input id="timei" name="name" type="time" placeholder="" class="form-control">
+            <label for="horasalida" class="control-label">Hora de salida</label>
+            <input id="horasalida" name="horasalida" type="time" placeholder="" class="form-control">
         </div>
     </div>
 
