@@ -20,7 +20,7 @@ $insertar = "INSERT INTO solicitudhospedaje (DN, Hospedaje, Empresa, Presupuesto
 
 $resultado = mysqli_query ($conexion, $insertar);
 
-if($resultado){
+if($resultado){ 
   echo "<script>alert('bien puto');window.location='/viat'</script>";
 
 }
