@@ -44,10 +44,10 @@
     <div class="form-group">
        <div class="col-md-12">
           <label for="hospedaje" class="control-label">Tipo de Hospedaje</label>
-       <select class="form-control" id="" name="hospedaje">
-           <option value="AL">Hotel</option>
+       <select class="form-control" id="" name="hospedaje[]">
+           <option value="Hotel">Hotel</option>
 
-           <option value="AL">AIRBNB</option>
+           <option value="AIRBNB">AIRBNB</option>
            </select>
         </div>
     </div>
