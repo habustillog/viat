@@ -31,20 +31,20 @@
 
    </div>
      <div id="logreg-forms">
-       <form class="form-signin" style="background: rgb(255, 255, 255);" method="POST" action="registro/sh.php">
+       <form class="form-signin" style="background: rgb(255, 255, 255);" method="post" action="registro/sh.php">
          <div class=" mb-4 font-weight-normal" >
   <fieldset>
     <legend class="text-center header"><h4>Reporte de Hospedaje</h4></legend>
     <div class="form-group">
        <div class="col-md-12">
             <label for="dn" class="control-label">DN</label>
-            <input id="dn" name="dn" type="text" placeholder="DN" class="form-control">
+            <input id="" name="dn" type="text" placeholder="DN" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
           <label for="hospedaje" class="control-label">Tipo de Hospedaje</label>
-       <select class="form-control" id="hospedaje" name="hospedaje">
+       <select class="form-control" id="" name="hospedaje">
            <option value="AL">Hotel</option>
 
            <option value="AL">AIRBNB</option>
@@ -55,52 +55,52 @@
     <div class="form-group">
        <div class="col-md-12">
             <label for="empresa" class="control-label">Nombre de la Empresa</label>
-            <input id="empresa" name="empresa" type="text" placeholder="Nombre del Hotel, Hostal, AIRBNB, etc." class="form-control">
+            <input id="" name="empresa" type="text" placeholder="Nombre del Hotel, Hostal, AIRBNB, etc." class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="ubicacionllegada" class="control-label">Ubicación de LLegada</label>
-            <input id="ubicacionllegada" name="ubicacionllegada" type="text" placeholder="Av.Santa Mónica33, Col. El Mirador, C.P. 54080." class="form-control">
+            <label for="ubicacion" class="control-label">Ubicación de LLegada</label>
+            <input id="" name="ubicacion" type="text" placeholder="Av.Santa Mónica33, Col. El Mirador, C.P. 54080." class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="presupuesto" class="control-label">Presupuesto</label>
-            <input id="presupuesto" name="presupuesto" type="number" placeholder="
+            <input id="" name="presupuesto" type="number" placeholder="
             MXN" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="diallegada" class="control-label">Día de LLegada</label>
-            <input id="diallegada" name="diallegada" type="date" placeholder="" class="form-control">
+            <input id="" name="diallegada" type="date" placeholder="" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="horallegada" class="control-label">Hora de LLegada</label>
-            <input id="horallegada" name="horallegada" type="time" placeholder="" class="form-control">
+            <input id="" name="horallegada" type="time" placeholder="" class="form-control">
         </div>
     </div>
 
     <div class="form-group">
        <div class="col-md-12">
             <label for="diallegada" class="control-label">Día de Salida</label>
-            <input id="diasalida" name="diasalida" type="date" placeholder="" class="form-control">
+            <input id="" name="diasalida" type="date" placeholder="" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="horasalida" class="control-label">Hora de salida</label>
-            <input id="horasalida" name="horasalida" type="time" placeholder="" class="form-control">
+            <input id="" name="horasalida" type="time" placeholder="" class="form-control">
         </div>
     </div>
 
 
  <div class="form-group">
      <div class="col-md-12 text-center">
-         <button type="submit" class="btn btn-primary btn-lg">Enivar</button>
+         <button type="submit" value="registrar" class="btn btn-primary btn-lg">Enivar</button>
      </div>
  </div>
        </fieldset>
