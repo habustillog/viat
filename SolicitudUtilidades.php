@@ -22,7 +22,7 @@
   </header>
   <main>
     <div class="" id="logreg-forms">
-      <form class="" style="background: rgb(255, 255, 255);">
+      <form class="" style="background: rgb(255, 255, 255);" method="post" action="registro/su.php">
         <div class=" mb-4 font-weight-normal" >
           <fieldset>
             <legend class="text-center header"><h4>Solicitud de Utilidades</h4></legend>
