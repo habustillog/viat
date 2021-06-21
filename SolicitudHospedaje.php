@@ -34,7 +34,7 @@
        <form class="form-signin" style="background: rgb(255, 255, 255);" method="post" action="registro/sh.php">
          <div class=" mb-4 font-weight-normal" >
   <fieldset>
-    <legend class="text-center header"><h4>Reporte de Hospedaje</h4></legend>
+    <legend class="text-center header"><h4>Solicitud de Hospedaje</h4></legend>
     <div class="form-group">
        <div class="col-md-12">
             <label for="dn" class="control-label">DN</label>
@@ -46,7 +46,6 @@
           <label for="hospedaje" class="control-label">Tipo de Hospedaje</label>
        <select class="form-control" id="" name="hospedaje[]">
            <option value="Hotel">Hotel</option>
-
            <option value="AIRBNB">AIRBNB</option>
            </select>
         </div>
