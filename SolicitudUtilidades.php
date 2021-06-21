@@ -4,6 +4,7 @@
 <!------ Include the above in your HEAD tag ---------->
 
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,21 +30,21 @@
 
           <div class="form-group">
              <div class="col-md-12">
-                  <label for="empresa" class="control-label">DN</label>
-                  <input id="empreai" name="name" type="text" placeholder="DN" class="form-control">
+                  <label for="dn" class="control-label">DN</label>
+                  <input id="dn" name="dn" type="text" placeholder="DN" class="form-control">
               </div>
           </div>
           <div class="form-group">
              <div class="col-md-12">
-                  <label for="empresa" class="control-label">Utilidades</label>
-                  <textarea class="form-control" id="empreai" name="name" rows="8" cols="1000" placeholder="Describa sus Utilidades"></textarea>
+                  <label for="utilidad" class="control-label">Utilidades</label>
+                  <textarea class="form-control" id="utilidad" name="utilidad" rows="8" cols="1000" placeholder="Describa sus Utilidades"></textarea>
 
               </div>
           </div>
           <div class="form-group">
              <div class="col-md-12">
-                  <label for="empresa" class="control-label">Presupuesto</label>
-                  <input id="empreai" name="name" type="number" placeholder="pesos mexicanos" class="form-control">
+                  <label for="number" class="control-label">Presupuesto</label>
+                  <input id="number" name="name" type="number" placeholder="$0.00 MXN" class="form-control">
               </div>
           </div>
           <div class="form-group">
