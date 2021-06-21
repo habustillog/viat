@@ -25,64 +25,65 @@
         ?>
      </header>
      <div id="logreg-forms">
-       <form class="form-signin" style="background: rgb(255, 255, 255);" method="post">
+       <form class="form-signin" style="background: rgb(255, 255, 255);" action="registro/st.php" method="post">
          <div class=" mb-4 font-weight-normal" >
   <fieldset>
     <legend class="text-center header"><h4>Solicitud de Transporte</h4></legend>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="empresa" class="control-label">DN</label>
-            <input id="empreai" name="name" type="text" placeholder="DN" class="form-control">
+            <label for="dn" class="control-label">DN</label>
+            <input id="dn" name="dn" type="text" placeholder="DN" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-          <label for="tipo" class="control-label">Tipo de transporte</label>
-       <select class="form-control" id="tipo">
-           <option value="AL">Aereo</option>
-           <option value="AL">Particular</option>
-           <option value="AL">Privado</option>
-           <option value="AL">Publico</option>
-           <option value="AL">Flotilla</option>
+          <label for="transporte" class="control-label">Tipo de transporte</label>
+       <select class="form-control" id="transporte" name="transporte[]">
+           <option value="Aereo">Aereo</option>
+           <option value="Particular">Particular</option>
+           <option value="Privado">Privado</option>
+           <option value="Publico">Publico</option>
+           <option value="Flotilla">Flotilla</option>
            </select>
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="empresa" class="control-label">Nombre de la Empresa</label>
-            <input id="empreai" name="name" type="text" placeholder="Volaris, ADO, GPT, etc." class="form-control">
+            <input id="" name="empresa" type="text" placeholder="Volaris, ADO, GPT, etc." class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="presupuesto" class="control-label">Presupuesto</label>
-            <input id="presupuestoi" name="name" type="number" placeholder="Pesos mexicanos" class="form-control">
+            <input id="" name="presupuesto" type="number" placeholder="Pesos mexicanos" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="datei" class="control-label">Día de Salida</label>
-            <input id="dateii" name="name" type="date" placeholder="" class="form-control">
+            <label for="diallegada" class="control-label">Día de LLegada</label>
+            <input id="diallegada" name="diallegada" type="date" placeholder="" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="time" class="control-label">Hora de salida</label>
-            <input id="timei" name="name" type="time" placeholder="" class="form-control">
+            <label for="horallegada" class="control-label">Hora de LLegada</label>
+            <input id="horallegada" name="horallegada" type="time" placeholder="" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="dater" class="control-label">Día de LLegada</label>
-            <input id="dateri" name="name" type="date" placeholder="" class="form-control">
+            <label for="diasalida" class="control-label">Día de Salida</label>
+            <input id="diasalida" name="diasalida" type="date" placeholder="" class="form-control">
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
-            <label for="timer" class="control-label">Hora de LLegada</label>
-            <input id="timeri" name="name" type="time" placeholder="" class="form-control">
+            <label for="horasalida" class="control-label">Hora de salida</label>
+            <input id="horasalida" name="horasalida" type="time" placeholder="" class="form-control">
         </div>
     </div>
+
 
  <div class="form-group">
      <div class="col-md-12 text-center">
