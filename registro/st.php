@@ -5,24 +5,23 @@ $dn = $_POST["dn"];
 $transporte = $_POST["transporte"];
 $empresa = $_POST["empresa"];
 $presupuesto = $_POST["presupuesto"];
-// $horallegada = $_POST["horallegada"];
 $diallegada = $_POST["diallegada"];
-
-
-
+// $horallegada = $_POST["horallegada"];
+$diasalida = $_POST["diasalida"];
+// $horasalida = $_POST["horasalida"];
 
 
 
 for ($i=0;$i<count($transporte);$i++)
 {
-  $transporte1 = $transporte[$i];
-// echo "$dn $transporte1 $empresa $presupuesto $diallegada $diasalida ";
+  $tranposrte1 = $hospedaje[$i];
+echo "$dn $hospedaje1 $empresa $ubicacion $presupuesto $diallegada $diasalida ";
 }
 
 
 
 //Consulta para insertar
-$insertar = "INSERT INTO solicitudtransporte(DN, Transporte, Empresa, Presupuesto, DiaLLegada,  DiaSalida,) VALUES ('$dn','$transporte1','$empresa','$presupuesto','$diallegada','$diasalida')";
+$insertar = "INSERT INTO solicitudhospedaje(DN, Tranporte, Empresa, Presupuesto, DiaLLegada, DiaSalida, ) VALUES ('$dn','$transporte1','$empresa','$presupuesto','$diallegada','$diasalida',)";
 //Ejectuar cosnsulta
 $resultado = mysqli_query ($conexion, $insertar);
 if(!$resultado){
