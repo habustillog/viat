@@ -23,10 +23,10 @@
   </header>
   <main>
     <div class="" id="logreg-forms">
-      <form class="" style="background: rgb(255, 255, 255);" method="post" action="../registro/sv.php">
+      <form class="" style="background: rgb(255, 255, 255);" method="post" action="../registro/sr.php">
         <div class=" mb-4 font-weight-normal" >
           <fieldset>
-            <legend class="text-center header"><h4>Solicitud de Viáticos</h4></legend>
+            <legend class="text-center header"><h4>Solicitud de Reembolso</h4></legend>
 
           <div class="form-group">
              <div class="col-md-12">
@@ -36,15 +36,15 @@
           </div>
           <div class="form-group">
              <div class="col-md-12">
-                  <label for="reembolso" class="control-label">Motivo de Reembolso</label>
-                  <input class="form-control" id="reembolso" name="reembolso" placeholder="Describe el motivo de tu reembolso"></input>
+                  <label for="motivo" class="control-label">Motivo de Reembolso</label>
+                  <textarea class="form-control" id="motivo" name="motivo" rows="8" cols="1000" placeholder="Describe el motivo de tu reembolso"></textarea>
 
               </div>
           </div>
           <div class="form-group">
              <div class="col-md-12">
                   <label for="evidencia" class="control-label">Anexar evidencia</label>
-                  <input id="hospedaje" name="evidencia" type="file" placeholder="Agregar imagen" accept="image/*,application/pdf" class="form-control">
+                  <input id="evidencia" name="evidencia" type="file"  accept="image/*,application/pdf" class="">
               </div>
           </div>
           <div class="form-group">
@@ -53,15 +53,15 @@
               </div>
           </div>
         </div>
-      </form>
-    </div>
-  </fieldset>
 
+  </fieldset>
+</form>
+</div>
 </main>
 
 <footer>
 <?php
-require_once('assets/footer.php')
+require_once('../assets/footer.php')
  ?>
   </footer>
 
