@@ -7,22 +7,22 @@ $empresa = $_POST["empresa"];
 $ubicacion = $_POST["ubicacion"];
 $presupuesto = $_POST["presupuesto"];
 $diallegada = $_POST["diallegada"];
-$horallegada = $_POST["horallegada"];
+// $horallegada = $_POST["horallegada"];
 $diasalida = $_POST["diasalida"];
-$horasalida = $_POST["horasalida"];
+// $horasalida = $_POST["horasalida"];
 
 
 
 for ($i=0;$i<count($hospedaje);$i++)
 {
   $hospedaje1 = $hospedaje[$i];
-echo "$dn $hospedaje1 $empresa $ubicacion $presupuesto $diallegada $horallegada $diasalida $horasalida";
+echo "$dn $hospedaje1 $empresa $ubicacion $presupuesto $diallegada $diasalida ";
 }
 
 
 
 //Consulta para insertar
-$insertar = "INSERT INTO solicitudhospedaje(DN, Hospedaje, Empresa, Presupuesto, Ubicacion, Diallegada, Horallegada, DiaSalida, HoraSalida) VALUES ('$dn','$hospedaje1','$empresa','$presupuesto','$ubicacion','$diallegada','$horallegada','$diasalida','$horasalida')";
+$insertar = "INSERT INTO solicitudhospedaje(DN, Hospedaje, Empresa, Presupuesto, Ubicacion, Diallegada, DiaSalida, ) VALUES ('$dn','$hospedaje1','$empresa','$presupuesto','$ubicacion','$diallegada','$diasalida',)";
 //Ejectuar cosnsulta
 $resultado = mysqli_query ($conexion, $insertar);
 if(!$resultado){
