@@ -48,17 +48,21 @@
 <table>
   <tr>
     <td>
-      <a href="SolicitudTransporte.php"><button class="btn"type="button" name="button">SOLICITUD DE TRANSPORTE</button></a>
+      <a href="solicitud/SolicitudTransporte.php"><button class="btn"type="button" name="button">SOLICITUD DE TRANSPORTE</button></a>
  </td>
     <td>
-    <a href="SolicitudHospedaje.php"><button class="btn" type="button" name="button">SOLICITUD DE HOSPEDAJE</button></a>
+    <a href="solicitud/SolicitudHospedaje.php"><button class="btn" type="button" name="button">SOLICITUD DE HOSPEDAJE</button></a>
     </td>
     <td>
-    <a href="SolicitudUtilidades.php"><button class="btn" type="button" name="button">SOLICITUD DE UTILIDADES</button></a>
+    <a href="solicitud/SolicitudUtilidades.php"><button class="btn" type="button" name="button">SOLICITUD DE UTILIDADES</button></a>
     </td>
     <td>
+    <a href="solicitud/SolicitudViaticos.php"><button class="btn" type="button" name="button">SOLICITUD DE VIATICOS</button></a>
+    </td>
+    <td>
+    <a href="solicitud/SolicitudReembolso.php"><button class="btn" type="button" name="button">SOLICITUD DE REEMBOLSO</button></a>
+    </td>
 
-    </td>
   </tr>
 </table>
 </div>
