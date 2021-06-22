@@ -2,27 +2,17 @@
 include '../conexion.php';
 //Recibir los Datos
 $dn = $_POST["dn"];
-$hospedaje = $_POST["hospedaje"];
-$empresa = $_POST["empresa"];
-$ubicacion = $_POST["ubicacion"];
-$presupuesto = $_POST["presupuesto"];
-$diallegada = $_POST["diallegada"];
-// $horallegada = $_POST["horallegada"];
-$diasalida = $_POST["diasalida"];
-// $horasalida = $_POST["horasalida"];
+$motivo = $_POST["motivo"];
+$evidencia = $_POST["evidencia"];
 
 
 
-for ($i=0;$i<count($hospedaje);$i++)
-{
-  $hospedaje1 = $hospedaje[$i];
-echo "$dn $hospedaje1 $empresa $ubicacion $presupuesto $diallegada $diasalida ";
-}
+
 
 
 
 //Consulta para insertar
-$insertar = "INSERT INTO solicitudhospedaje(DN, Hospedaje, Empresa, Presupuesto, Ubicacion, Diallegada, DiaSalida, ) VALUES ('$dn','$hospedaje1','$empresa','$presupuesto','$ubicacion','$diallegada','$diasalida',)";
+$insertar = "INSERT INTO solicitudreembolso (DN, Motivo, Evidencia) VALUES ('$dn','$motivo','$evidencia',)";
 //Ejectuar cosnsulta
 $resultado = mysqli_query ($conexion, $insertar);
 if(!$resultado){
@@ -36,3 +26,6 @@ window.location= '../index.php'
 }
 //Cerrar conexión
 mysqli_close($conexion);
+
+
+ if (count($_evidencia) > 0) { if (is_uploaded_file($evidencia['userImage']['tmp_name'])) { require_once "db.php"; $imgData = addslashes(file_get_contents($_FILES['userImage']['tmp_name'])); $imageProperties = getimageSize($_FILES['userImage']['tmp_name']); $sql = "INSERT INTO output_images(imageType ,imageData) VALUES('{$imageProperties['mime']}', '{$imgData}')"; $current_id = mysqli_query($conn, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($conn)); if (isset($current_id)) { header("Location: listImages.php"); } } }
