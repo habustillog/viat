@@ -20,8 +20,8 @@
   <body>
 
 <nav class="navbar navbar-light bg-light">
-  <a class="navbar-brand" href="index.php">
-    <img src="assets/img/logo.png" width="140" height="50" alt="">
+  <a class="navbar-brand" href="../index.php">
+    <img src="assets/img/logo.png" width="140" height="50" alt="Logo">
   </a>
     <a href="../index.php"><button class="btn btn-primary"type="button" name="button">REGRESAR</button></a>
   <a href="login1.php"><button class="btn btn-danger"type="button" name="button">CERRAR SESIÓN</button></a>
