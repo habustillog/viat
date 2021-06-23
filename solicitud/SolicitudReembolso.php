@@ -23,6 +23,7 @@
   </header>
   <main>
     <div class="" id="logreg-forms">
+
       <form class="" style="background: rgb(255, 255, 255);" method="post" action="../registro/sr.php">
         <div class=" mb-4 font-weight-normal" >
           <fieldset>
@@ -42,19 +43,19 @@
           </div>
           <div class="form-group">
              <div class="col-md-12">
-                  <label for="cantidad" class="control-label">Cantidad</label>
+                  <label for="cantidad" class="control-label">Cantidad de Reembolso</label>
                   <input id="" name="cantidad" type="number" step="any" min="0" placeholder="$0.00 MXN" class="form-control">
               </div>
           </div>
           <div class="form-group">
              <div class="col-md-12">
                   <label for="evidencia" class="control-label">Anexar evidencia</label>
-                  <input id="evidencia" name="evidencia" type="file"  accept="image/*,application/pdf" class="">
+                  <input id="evidencia"  type="file" name="evidencia" class="" required>
               </div>
           </div>
           <div class="form-group">
               <div class="col-md-12 text-center">
-                  <button type="submit" class="btn btn-primary btn-lg">Enivar</button>
+                  <button type="submit" class="btn btn-primary btn-lg" name="enviar">Enivar</button>
               </div>
           </div>
         </div>
