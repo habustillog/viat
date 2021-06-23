@@ -43,8 +43,8 @@
           </div>
           <div class="form-group">
              <div class="col-md-12">
-                  <label for="number" class="control-label">Presupuesto</label>
-                  <input id="number" name="name" type="number" placeholder="$0.00 MXN" class="form-control">
+                  <label for="presupuesto" class="control-label">Presupuesto</label>
+                  <input id="number" name="presupuesto" type="number" placeholder="$0.00 MXN" class="form-control">
               </div>
           </div>
           <div class="form-group">
@@ -61,7 +61,7 @@
 
 <footer>
 <?php
-require_once('assets/footer.php')
+require_once('../assets/footer.php')
  ?>
   </footer>
 
