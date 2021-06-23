@@ -22,7 +22,7 @@ echo "$dn $hospedaje1 $empresa $ubicacion $presupuesto $diallegada $diasalida ";
 
 
 //Consulta para insertar
-$insertar = "INSERT INTO solicitudhospedaje(DN, Hospedaje, Empresa, Presupuesto, Ubicacion, Diallegada, DiaSalida, ) VALUES ('$dn','$hospedaje1','$empresa','$presupuesto','$ubicacion','$diallegada','$diasalida',)";
+$insertar = "INSERT INTO solicitudhospedaje(DN, Hospedaje, Empresa, Presupuesto, Ubicacion, DiaLLegada, DiaSalida ) VALUES ('$dn','$hospedaje1','$empresa','$presupuesto','$ubicacion','$diallegada','$diasalida')";
 //Ejectuar cosnsulta
 $resultado = mysqli_query ($conexion, $insertar);
 if(!$resultado){
