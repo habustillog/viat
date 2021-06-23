@@ -38,7 +38,12 @@
              <div class="col-md-12">
                   <label for="motivo" class="control-label">Motivo de Reembolso</label>
                   <textarea class="form-control" id="motivo" name="motivo" rows="8" cols="1000" placeholder="Describe el motivo de tu reembolso"></textarea>
-
+            </div>
+          </div>
+          <div class="form-group">
+             <div class="col-md-12">
+                  <label for="cantidad" class="control-label">Cantidad</label>
+                  <input id="" name="cantidad" type="number" step="any" min="0" placeholder="$0.00 MXN" class="form-control">
               </div>
           </div>
           <div class="form-group">
