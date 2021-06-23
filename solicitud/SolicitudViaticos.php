@@ -61,7 +61,7 @@
 
 <footer>
 <?php
-require_once('assets/footer.php')
+require_once('../assets/footer.php')
  ?>
   </footer>
 
