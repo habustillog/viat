@@ -44,7 +44,7 @@
           <div class="form-group">
              <div class="col-md-12">
                   <label for="presupuesto" class="control-label">Presupuesto</label>
-                  <input id="number" name="presupuesto" type="number" placeholder="$0.00 MXN" class="form-control">
+                  <input id="number" name="presupuesto" type="number" step="any" min="0" placeholder="$0.00 MXN" class="form-control">
               </div>
           </div>
           <div class="form-group">
