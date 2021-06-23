@@ -37,14 +37,14 @@
           <div class="form-group">
              <div class="col-md-12">
                   <label for="comida" class="control-label">Días de comida</label>
-                  <input class="form-control" id="comida" name="comida"placeholder="Ingresa el número de días de comida"></input>
+                  <input class="form-control" id="comida" name="comida" type="number" min="0" placeholder="Número de días de comida"></input>
 
               </div>
           </div>
           <div class="form-group">
              <div class="col-md-12">
                   <label for="hospedaje" class="control-label">Días de hospedaje en carretera</label>
-                  <input id="hospedaje" name="hospedaje" type="number" placeholder="Ingresa el numéro de días de hospedaje en carretera" class="form-control">
+                  <input id="hospedaje" name="hospedaje" type="number" min="0" placeholder="Numéro de días de hospedaje en carretera" class="form-control">
               </div>
           </div>
           <div class="form-group">
