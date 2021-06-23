@@ -68,8 +68,7 @@
     <div class="form-group">
        <div class="col-md-12">
             <label for="presupuesto" class="control-label">Presupuesto</label>
-            <input id="" name="presupuesto" type="number" placeholder="
-            MXN" class="form-control">
+            <input id="" name="presupuesto" type="number" min="0" step="any" placeholder="$0.00 MXN" class="form-control">
         </div>
     </div>
     <div class="form-group">
