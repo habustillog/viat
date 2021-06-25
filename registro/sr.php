@@ -7,21 +7,31 @@ include '../conexion.php';
 //   )
 
 
-$dn = $_POST["dn"];
-$motivo = $_POST["motivo"];
-$cantidad = $_POST["cantidad"];
-$evidencia = $_POST['evidencia']['tmp_name'];
+// $dn = $_POST["dn"];
+// $motivo = $_POST["motivo"];
+// $cantidad = $_POST["cantidad"];
+
 echo "DN: $dn <br>";
 echo "motivo: $motivo<br>";
 echo "cantidad: $cantidad<br>";
-echo "evi: $evidencia<br>";
 
-if ( !empty($_FILES['evidencia']) && is_uploaded_file($_FILES['evidencia']['tmp_name'])) {
+if(isset($_POST["submit"])){
+    $revisar = getimagesize($_FILES["evidencia"]["tmp_name"]);
+    if($revisar !== false)
+        $image = $_FILES['evidencia']['tmp_name'];
+        $imgContenido = addslashes(file_get_contents($image));
 
-  $imgData = addslashes(file_get_contents($_FILES['evidencia']['tmp_name']));
-  $imageProperties = getimageSize($_FILES['evidencia']['tmp_name']);
+}
+        echo "$imagContenido" ;
+else{
+  echo "vlv"
+}
+// if ( !empty($_FILES['evidencia']) && is_uploaded_file($_FILES['evidencia']['tmp_name'])) {
+//
+//   $imgData = addslashes(file_get_contents($_FILES['evidencia']['tmp_name']));
+//   $imageProperties = getimageSize($_FILES['evidencia']['tmp_name']);
 
-  echo "{$imageProperties['mime']} {$imgData} ";
+  // echo "{$imageProperties['mime']} {$imgData} ";
 
     // $sql = "INSERT INTO solicitudreembolso(DN , Motivo, Evidencia, Canttidad) VALUES('$dn','$motivo', '{$imageProperties['mime']}', '{$imgData}', '$cantidad')";
     // $current_id = mysqli_query($conn, $sql) or die("<b>Error:</b> Problem on Image Insert<br/>" . mysqli_error($conexion));
@@ -29,6 +39,6 @@ if ( !empty($_FILES['evidencia']) && is_uploaded_file($_FILES['evidencia']['tmp_
     //   header("Location: listImages.php");
     // }
 
-}else {
-  echo "string";
-}
+// }else {
+//   echo "string";
+// }
