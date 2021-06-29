@@ -1,5 +1,16 @@
 <?php
 include '../conexion.php';
+//Validar Datos vacios
+if (
+  isset($_POST['dn']) && !empty($_POST['dn']) &&
+  isset($_POST['hospedaje']) && !empty($_POST['hospedaje']) &&
+  isset($_POST['empresa']) && !empty($_POST['empresa']) &&
+  isset($_POST['ubicacion']) && !empty($_POST['ubicacion']) &&
+  isset($_POST['presupuesto']) && !empty($_POST['presupuesto']) &&
+  isset($_POST['diallegada']) && !empty($_POST['diallegada']) &&
+  isset($_POST['diasalida']) && !empty($_POST['diasalida']) 
+  )
+{
 //Recibir los Datos
 $dn = $_POST["dn"];
 $hospedaje = $_POST["hospedaje"];
@@ -36,3 +47,8 @@ window.location= '../index.php'
 }
 //Cerrar conexión
 mysqli_close($conexion);
+}
+else {
+echo "Error";
+
+}
