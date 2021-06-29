@@ -1,5 +1,12 @@
 <?php
 include '../conexion.php';
+//Validar Datos vacios
+if (
+  isset($_POST['dn']) && !empty($_POST['dn']) &&
+  isset($_POST['motivo']) && !empty($_POST['motivo']) &&
+  isset($_POST['cantidad']) && !empty($_POST['cantidad'])
+  )
+{
 //Recibir los Datos
 $dn = $_POST["dn"];
 $transporte = $_POST["transporte"];
