@@ -18,7 +18,7 @@ if ( !empty($_FILES["evidencia"])) {
 }else {
   echo "string";
 }
-    $insertar = "INSERT INTO solicitudreembolso(DN , Motivo, Cantidad, Evidencia) VALUES('$dn','$motivo', '$cantidad', '$evidencia')";
+    $insertar = "INSERT INTO solicitudreembolso (DN , Motivo, Cantidad, Evidencia) VALUES ('$dn','$motivo', '$cantidad', '$evidencia')";
      //Ejectuar cosnsulta
      $resultado = mysqli_query ($conexion, $insertar);
      if(!$resultado){
