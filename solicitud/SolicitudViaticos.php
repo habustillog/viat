@@ -31,20 +31,20 @@
           <div class="form-group">
              <div class="col-md-12">
                   <label for="dn" class="control-label">DN</label>
-                  <input id="dn" name="dn" type="text" placeholder="DN" class="form-control">
+                  <input id="dn" name="dn" type="text" placeholder="DN" class="form-control"  required>
               </div>
           </div>
           <div class="form-group">
              <div class="col-md-12">
                   <label for="comida" class="control-label">Días de comida</label>
-                  <input class="form-control" id="comida" name="comida" type="number" min="0" placeholder="Número de días de comida"></input>
+                  <input class="form-control" id="comida" name="comida" type="number" min="0" placeholder="Número de días de comida"  required>
 
               </div>
           </div>
           <div class="form-group">
              <div class="col-md-12">
                   <label for="hospedaje" class="control-label">Días de hospedaje en carretera</label>
-                  <input id="hospedaje" name="hospedaje" type="number" min="0" placeholder="Numéro de días de hospedaje en carretera" class="form-control">
+                  <input id="hospedaje" name="hospedaje" type="number" min="0" placeholder="Numéro de días de hospedaje en carretera" class="form-control"  required>
               </div>
           </div>
           <div class="form-group">
