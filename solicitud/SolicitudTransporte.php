@@ -33,7 +33,7 @@
     <div class="form-group">
        <div class="col-md-12">
             <label for="dn" class="control-label">DN</label>
-            <input id="dn" name="dn" type="text" placeholder="DN" class="form-control">
+            <input id="dn" name="dn" type="text" placeholder="DN" class="form-control"  required>
         </div>
     </div>
     <div class="form-group">
@@ -51,26 +51,26 @@
     <div class="form-group">
        <div class="col-md-12">
             <label for="empresa" class="control-label">Nombre de la Empresa</label>
-            <input id="" name="empresa" type="text" placeholder="Volaris, ADO, GPT, etc." class="form-control">
+            <input id="" name="empresa" type="text" placeholder="Volaris, ADO, GPT, etc." class="form-control"  required>
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="presupuesto" class="control-label">Presupuesto</label>
-            <input id="" name="presupuesto" type="number" step="any" min="0" placeholder="$0.00 MXN" class="form-control">
+            <input id="" name="presupuesto" type="number" step="any" min="0" placeholder="$0.00 MXN" class="form-control"  required>
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="diallegada" class="control-label">Día de LLegada al destino</label>
-            <input id="diallegada" name="diallegada" type="date" placeholder="" class="form-control">
+            <input id="diallegada" name="diallegada" type="date" placeholder="" class="form-control"  required>
         </div>
     </div>
 
     <div class="form-group">
        <div class="col-md-12">
             <label for="diasalida" class="control-label">Día de Salida</label>
-            <input id="diasalida" name="diasalida" type="date" placeholder="" class="form-control">
+            <input id="diasalida" name="diasalida" type="date" placeholder="" class="form-control"  required>
         </div>
     </div>
 
