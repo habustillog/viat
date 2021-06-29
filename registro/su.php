@@ -1,19 +1,23 @@
 <?php
+
+//Validar Datos vacios
+if (
+  isset($_POST['dn']) && !empty($_POST['dn']) &&
+  isset($_POST['utilidad']) && !empty($_POST['utilidad']) &&
+  isset($_POST['presupuesto']) && !empty($_POST['presupuesto'])
+  )
+{
+  
 include '../conexion.php';
+
 //Recibir los Datos
 $dn = $_POST["dn"];
 $utilidad = $_POST["utilidad"];
 $presupuesto = $_POST["presupuesto"];
 
-
-
-
-
-
-
-
 //Consulta para insertar
 $insertar = "INSERT INTO solicitudutilidades(DN, Utilidad, Presupuesto ) VALUES ('$dn','$utilidad','$presupuesto')";
+
 //Ejectuar cosnsulta
 $resultado = mysqli_query ($conexion, $insertar);
 if(!$resultado){
@@ -27,3 +31,7 @@ window.location= '../index.php'
 }
 //Cerrar conexión
 mysqli_close($conexion);
+}
+else {
+  echo "Error";
+}
