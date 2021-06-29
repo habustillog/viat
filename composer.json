@@ -1,7 +1,5 @@
 {
-    "name": "dell/viaticos",
-    "description": "google",
-    "type": "library",
-    "license": "$composer require google/apiclient:\"^2.0\"",
-    "require": {}
+    "require": {
+        "google/apiclient": "^2.7"
+    }
 }
