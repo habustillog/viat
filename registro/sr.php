@@ -15,10 +15,12 @@ $cantidad = $_POST["cantidad"];
 
 if ( !empty($_FILES["evidencia"])) {
   echo $_FILES["evidencia"]['tmp_name'];
+  $imgData = addslashes(file_get_contents($_FILES['evidencia']['tmp_name']));
 }else {
-  echo "string";
+  echo "Anexa evidencia"; 
+  exit();
 }
-    $insertar = "INSERT INTO solicitudreembolso (DN , Motivo, Cantidad, Evidencia) VALUES ('$dn','$motivo', '$cantidad', '$evidencia')";
+    $insertar = "INSERT INTO solicitudreembolso (DN , Motivo, Cantidad, Evidencia) VALUES ('$dn','$motivo', '$cantidad', '$imgData')";
      //Ejectuar cosnsulta
      $resultado = mysqli_query ($conexion, $insertar);
      if(!$resultado){
