@@ -3,8 +3,11 @@ include '../conexion.php';
 //Validar Datos vacios
 if (
   isset($_POST['dn']) && !empty($_POST['dn']) &&
-  isset($_POST['motivo']) && !empty($_POST['motivo']) &&
-  isset($_POST['cantidad']) && !empty($_POST['cantidad'])
+  isset($_POST['transporte']) && !empty($_POST['transporte']) &&
+  isset($_POST['empresa']) && !empty($_POST['empresa']) &&
+  isset($_POST['presupuesto']) && !empty($_POST['presupuesto']) &&
+  isset($_POST['diallegada']) && !empty($_POST['diallegada']) &&
+  isset($_POST['diasalida']) && !empty($_POST['diasalida'])
   )
 {
 //Recibir los Datos
@@ -42,3 +45,8 @@ window.location= '../index.php'
 }
 //Cerrar conexión
 mysqli_close($conexion);
+}
+
+else {
+  echo "Error";
+}
