@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit64699127771e4791599a97ef0d0090d8
+class ComposerStaticInit2358e9385b4695194e2f71cb3b62ea6b
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -12,6 +12,7 @@ class ComposerStaticInit64699127771e4791599a97ef0d0090d8
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'decc78cc4436b1292c6c0d151b19445c' => __DIR__ . '/..' . '/phpseclib/phpseclib/phpseclib/bootstrap.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
+        '1f87db08236948d07391152dccb70f04' => __DIR__ . '/..' . '/google/apiclient-services/autoload.php',
         'a8d3953fd9959404dd22d3dfcd0a79f0' => __DIR__ . '/..' . '/google/apiclient/src/aliases.php',
     );
 
@@ -37,6 +38,7 @@ class ComposerStaticInit64699127771e4791599a97ef0d0090d8
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
             'GuzzleHttp\\' => 11,
+            'Google\\Service\\' => 15,
             'Google\\Auth\\' => 12,
             'Google\\' => 7,
         ),
@@ -87,6 +89,10 @@ class ComposerStaticInit64699127771e4791599a97ef0d0090d8
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
+        'Google\\Service\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/google/apiclient-services/src',
+        ),
         'Google\\Auth\\' => 
         array (
             0 => __DIR__ . '/..' . '/google/auth/src',
@@ -98,16 +104,6 @@ class ComposerStaticInit64699127771e4791599a97ef0d0090d8
         'Firebase\\JWT\\' => 
         array (
             0 => __DIR__ . '/..' . '/firebase/php-jwt/src',
-        ),
-    );
-
-    public static $prefixesPsr0 = array (
-        'G' => 
-        array (
-            'Google_Service_' => 
-            array (
-                0 => __DIR__ . '/..' . '/google/apiclient-services/src',
-            ),
         ),
     );
 
@@ -139,10 +135,9 @@ class ComposerStaticInit64699127771e4791599a97ef0d0090d8
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit64699127771e4791599a97ef0d0090d8::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit64699127771e4791599a97ef0d0090d8::$prefixDirsPsr4;
-            $loader->prefixesPsr0 = ComposerStaticInit64699127771e4791599a97ef0d0090d8::$prefixesPsr0;
-            $loader->classMap = ComposerStaticInit64699127771e4791599a97ef0d0090d8::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit2358e9385b4695194e2f71cb3b62ea6b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit2358e9385b4695194e2f71cb3b62ea6b::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit2358e9385b4695194e2f71cb3b62ea6b::$classMap;
 
         }, null, ClassLoader::class);
     }

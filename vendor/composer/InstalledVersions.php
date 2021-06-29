@@ -48,39 +48,39 @@ private static $installed = array (
     ),
     'firebase/php-jwt' => 
     array (
-      'pretty_version' => 'v5.2.1',
-      'version' => '5.2.1.0',
+      'pretty_version' => 'v5.4.0',
+      'version' => '5.4.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'f42c9110abe98dd6cfe9053c49bc86acc70b2d23',
+      'reference' => 'd2113d9b2e0e349796e72d2a63cf9319100382d2',
     ),
     'google/apiclient' => 
     array (
-      'pretty_version' => 'v2.9.1',
-      'version' => '2.9.1.0',
+      'pretty_version' => 'v2.10.1',
+      'version' => '2.10.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '2fb6e702aca5d68203fa737f89f6f774022494c6',
+      'reference' => '11871e94006ce7a419bb6124d51b6f9ace3f679b',
     ),
     'google/apiclient-services' => 
     array (
-      'pretty_version' => 'v0.176.0',
-      'version' => '0.176.0.0',
+      'pretty_version' => 'v0.201.1',
+      'version' => '0.201.1.0',
       'aliases' => 
       array (
       ),
-      'reference' => '316cbf9b02c575a140d8cbeca48a3ca0070fcd5a',
+      'reference' => 'ee1072221acf7c32e3de9b18e11fec3ab23ec38f',
     ),
     'google/auth' => 
     array (
-      'pretty_version' => 'v1.15.1',
-      'version' => '1.15.1.0',
+      'pretty_version' => 'v1.16.0',
+      'version' => '1.16.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => '4e0c9367719df9703e96f5ad613041b87742471c',
+      'reference' => 'c747738d2dd450f541f09f26510198fbedd1c8a0',
     ),
     'guzzlehttp/guzzle' => 
     array (
@@ -138,21 +138,21 @@ private static $installed = array (
     ),
     'phpseclib/phpseclib' => 
     array (
-      'pretty_version' => '3.0.8',
-      'version' => '3.0.8.0',
+      'pretty_version' => '3.0.9',
+      'version' => '3.0.9.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd9615a6fb970d9933866ca8b4036ec3407b020b6',
+      'reference' => 'a127a5133804ff2f47ae629dd529b129da616ad7',
     ),
     'psr/cache' => 
     array (
-      'pretty_version' => '1.0.1',
-      'version' => '1.0.1.0',
+      'pretty_version' => '2.0.0',
+      'version' => '2.0.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'd11b50ad223250cf17b86e38383413f5a6764bf8',
+      'reference' => '213f9dbc5b9bfbc4f8db86d2838dc968752ce13b',
     ),
     'psr/http-client' => 
     array (
