@@ -40,7 +40,7 @@
     <div class="form-group">
        <div class="col-md-12">
             <label for="dn" class="control-label">DN</label>
-            <input id="" name="dn" type="text" placeholder="DN" class="form-control">
+            <input id="" name="dn" type="text" placeholder="DN" class="form-control"  required>
         </div>
     </div>
     <div class="form-group">
@@ -57,25 +57,25 @@
     <div class="form-group">
        <div class="col-md-12">
             <label for="empresa" class="control-label">Nombre de la Empresa</label>
-            <input id="" name="empresa" type="text" placeholder="Nombre del Hotel, Hostal, AIRBNB, etc." class="form-control">
+            <input id="" name="empresa" type="text" placeholder="Nombre del Hotel, Hostal, AIRBNB, etc." class="form-control"  required>
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="ubicacion" class="control-label">Ubicación de LLegada</label>
-            <input id="" name="ubicacion" type="text" placeholder="Av.Santa Mónica33, Col. El Mirador, C.P. 54080." class="form-control">
+            <input id="" name="ubicacion" type="text" placeholder="Av.Santa Mónica33, Col. El Mirador, C.P. 54080." class="form-control"  required>
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="presupuesto" class="control-label">Presupuesto</label>
-            <input id="" name="presupuesto" type="number" min="0" step="any" placeholder="$0.00 MXN" class="form-control">
+            <input id="" name="presupuesto" type="number" min="0" step="any" placeholder="$0.00 MXN" class="form-control"  required>
         </div>
     </div>
     <div class="form-group">
        <div class="col-md-12">
             <label for="diallegada" class="control-label">Día de LLegada</label>
-            <input id="" name="diallegada" type="date" placeholder="" class="form-control">
+            <input id="" name="diallegada" type="date" placeholder="" class="form-control"  required>
         </div>
     </div>
 
@@ -83,7 +83,7 @@
     <div class="form-group">
        <div class="col-md-12">
             <label for="diallegada" class="control-label">Día de Salida</label>
-            <input id="" name="diasalida" type="date" placeholder="" class="form-control">
+            <input id="" name="diasalida" type="date" placeholder="" class="form-control"  required>
         </div>
     </div>
 
