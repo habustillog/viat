@@ -1,5 +1,13 @@
 <?php
 include '../conexion.php';
+//Validar Datos vacios
+if (
+  isset($_POST['dn']) && !empty($_POST['dn']) &&
+  isset($_POST['comida']) && !empty($_POST['comida']) &&
+  isset($_POST['hospedaje']) && !empty($_POST['hospedaje'])
+  )
+{
+
 //Recibir los Datos
 $dn = $_POST["dn"];
 $comida = $_POST["comida"];
@@ -20,3 +28,8 @@ window.location= '../index.php'
 }
 //Cerrar conexión
 mysqli_close($conexion);
+}
+
+else {
+  echo "Error"; 
+}
