@@ -24,7 +24,7 @@
   <main>
     <div class="" id="logreg-forms">
 
-      <form class="" style="background: rgb(255, 255, 255);" method="post" action="../registro/s.php" enctype="multipart/form-data">
+      <form class="" style="background: rgb(255, 255, 255);" method="post" action="../registro/sr.php" enctype="multipart/form-data">
         <div class=" mb-4 font-weight-normal" >
           <fieldset>
             <legend class="text-center header"><h4>Solicitud de Reembolso</h4></legend>
