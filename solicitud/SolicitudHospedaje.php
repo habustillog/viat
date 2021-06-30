@@ -21,8 +21,7 @@
    </head>
    <body>
      <header>
-
-       <?php
+      <?php
        require_once('../assets/header.php')
         ?>
      </header>
