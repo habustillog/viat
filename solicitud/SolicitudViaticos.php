@@ -18,7 +18,7 @@
 <body>
   <header>
     <?php
-       require_once('header.php')
+       require_once ('header.php')
      ?>
   </header>
   <main>
@@ -61,7 +61,7 @@
 
 <footer>
 <?php
-require_once('../assets/footer.php')
+require_once ('../assets/footer.php')
  ?>
   </footer>
 
