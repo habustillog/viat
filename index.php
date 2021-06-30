@@ -54,17 +54,16 @@ if(isset($_GET["code"]))
  }
 }
 
-
 if(!isset($_SESSION['access_token']))
 {
- $login_button = '<a href="'.$google_client->createAuthUrl().'">Login With Google</a>';
+ $login_button = '<a href="'.$google_client->createAuthUrl().'">Iniciar sesión </a>';
 }
-
 ?>
 
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -85,28 +84,24 @@ if(!isset($_SESSION['access_token']))
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
+header{
+  background-color: rgb(255, 5, 5);
+ height:15%;
+ }
 </style>
    <body>
 
 
      <header>
-       <?php
-       if($login_button == '')
-       {
-        echo '<div class="panel-heading">Welcome User</div><div class="panel-body">';
-        echo '<img src="'.$_SESSION["user_image"].'" class="img-responsive img-circle img-thumbnail" />';
-        echo '<h3><b>Name :</b> '.$_SESSION['user_first_name'].' '.$_SESSION['user_last_name'].'</h3>';
-        echo '<h3><b>Email :</b> '.$_SESSION['user_email_address'].'</h3>';
-        echo '<h3><a href="logout.php">Logout</h3></div>';
-       }
-       else
-       {
-        echo '<div align="center">'.$login_button . '</div>';
-       }
-       ?>
-  </header>
+       <nav class="navbar navbar-light bg-light">
+         <a class="navbar-brand" href="../index.php">
+           <img src="assets/img/logo.png" width="140" height="50" alt="Logo">
+         </a>
+      <a href="logout.php"><button class="btn btn-danger"type="button" name="button">CERRAR SESIÓN</button></a>
+
+       </nav>
+     </header>
   <main>
 
 
