@@ -64,7 +64,7 @@ if(!isset($_SESSION['access_token']))
 <html>
  <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>PHP Login using Google Account</title>
+  <title>Login</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -82,11 +82,10 @@ if(!isset($_SESSION['access_token']))
    <?php
    if($login_button == '')
    {
-    echo '<div class="panel-heading">Welcome User</div><div class="panel-body">';
-    echo '<img src="'.$_SESSION["user_image"].'" class="img-responsive img-circle img-thumbnail" />';
+    echo '<div class="panel-heading">Bienvenido</div><div class="panel-body">';
     echo '<h3><b>Name :</b> '.$_SESSION['user_first_name'].' '.$_SESSION['user_last_name'].'</h3>';
     echo '<h3><b>Email :</b> '.$_SESSION['user_email_address'].'</h3>';
-    echo '<h3><a href="logout.php">Logout</h3></div>';
+    echo '<h3><a href="logout.php">Cerrar Sesión</h3></div>';
    }
    else
    {
