@@ -1,7 +1,4 @@
 <?php
-
-//index.php
-
 //Include Configuration File
 include('config.php');
 
@@ -53,46 +50,54 @@ if(isset($_GET["code"]))
   }
  }
 }
-
-
+?>
+<?php
 if(!isset($_SESSION['access_token']))
 {
- $login_button = '<a href="'.$google_client->createAuthUrl().'">Login With Google</a>';
+ $login_button = '<a href="'.$google_client->createAuthUrl().'">Conectarse con Google</a>';
 }
+ ?>
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-?>
-<html>
- <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Login</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="google-signin-client_id" content="647327890949-p258favcg5medm53tegot4li91nuuvus.apps.googleusercontent.com">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login</title>
+</head>
  </head>
  <body>
-  <div class="container">
-   <br />
-   <h2 align="center">PHP Login using Google Account</h2>
-   <br />
-   <div class="panel panel-default">
+<div id="logreg-forms">
+       <form class="form-signin" style="background: rgb(255, 255, 255);">
+         <div class="h3 mb-3 font-weight-normal" style="text-align: center">
+           <img src="assets/img/logo.png" alt="Gpt Services">
+         </div>
+           <h1 class="h3 mb-3 font-weight-normal" style="text-align: center; font-size:20;">Utiliza la dirección de correo electrónico que se otorgo en el trabajo.</h1>
+
+
+</form>
+</div>
+
+   <footer>
    <?php
-   if($login_button == '')
-   {
-    echo '<div class="panel-heading">Bienvenido</div><div class="panel-body">';
-    echo '<h3><b>Name :</b> '.$_SESSION['user_first_name'].' '.$_SESSION['user_last_name'].'</h3>';
-    echo '<h3><b>Email :</b> '.$_SESSION['user_email_address'].'</h3>';
-    echo '<h3><a href="logout.php">Cerrar Sesión</h3></div>';
-   }
-   else
-   {
-    echo '<div align="center">'.$login_button . '</div>';
-   }
+   require_once('assets/footer.php')
    ?>
+   </footer>
+
    </div>
   </div>
  </body>
-</html>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="assets/js/script.js"></script>
+ <script src="https://apis.google.com/js/platform.js" async defer></script>
+ </html>
