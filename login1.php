@@ -80,7 +80,7 @@ if(!isset($_SESSION['access_token']))
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Loginini</title>
+    <title>Login</title>
 </head>
 <body>
 
@@ -94,7 +94,6 @@ if(!isset($_SESSION['access_token']))
 
               <a href="index.php"><button class="btn google-btn social-btn" onclick="index.php" type="button" style="width:350px;" ><span style="font-size:20" ><i class="fab fa-google-plus-g" ></i>Conectarse con Google</span> </button></a>
             </div>
-
 </form>
 
     </div>
